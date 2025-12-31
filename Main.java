@@ -11,10 +11,11 @@ cus1.setSeats(7);
 if(cus.getTicTyp().equals("reg")){
     System.out.println(cus.getTicTyp());
     RegTic rt=new RegTic(200,"7hhu");
-   
-cus.setRt(rt);
+   cus.setRt(rt);
 rt.setCus(cus);
      rt.book();
+    System.out.println(cus.getRt());
+        System.out.println(cus.getPri());
 
 }
 if(cus1.getTicTyp().equals("prm")){
@@ -26,11 +27,12 @@ if(cus1.getTicTyp().equals("prm")){
     cus1.setPt(pt);
     pt.setCus(cus1);
      pt.book();
-
-}System.out.println(cus.getRt());
-        System.out.println(cus.getPri());
-        System.out.println(cus1.getRt());
+     System.out.println(cus1.getRt());
         System.out.println(cus1.getPri());
+
+}
+       
     }
 }
+
 
